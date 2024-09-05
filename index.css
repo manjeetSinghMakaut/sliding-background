@@ -1,0 +1,106 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right side */
+    align-items: center;
+    background-color: #f5f3f3;
+    background-size: cover; /* Ensure background fits properly */
+    background-position: center; 
+    
+
+}
+
+.slide img{
+    height: 100px;
+    width: 100px;
+    object-fit:fill;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.slider-container{
+    width: 416px;
+    height: 120px;
+    overflow-y: hidden;
+   
+    overflow-x: scroll;
+    position: relative;
+    right: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    background-color: rgb(214, 211, 221);
+    
+}
+.slider-container::-webkit-scrollbar {
+    height: 5px; /* Height of the horizontal scrollbar */
+    background-color: #f1f1f1; /* Background color of scrollbar track */
+    border-radius: 15px; /* Rounded edges for the scrollbar */
+}
+
+/* The draggable part of the scrollbar (thumb) */
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Thumb color (scrollbar handle) */
+    border-radius: 15px; /* Rounded edges for the thumb */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the scrollbar thumb */
+.slider-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Firefox-specific scrollbar customization */
+.slider-container {
+    scrollbar-width: thin; /* Make scrollbar thin in Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track color for Firefox */
+}
+
+/* Internet Explorer 10+ */
+.slider-container {
+    -ms-overflow-style: none; /* Hides default scrollbar in IE */
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    width: max-content;
+    background-color: #00000017;
+    
+    
+}
+.slide img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button-div {
+    position: absolute;
+    bottom: 28px;
+    right: 114px;
+    display: flex;
+    gap: 30px;
+    bottom: 170px;
+}
+
+.previous, .next {
+    height: 36px;
+    width: 100px;
+    border-radius: 13px;
+    border: none;
+    background-color: #888585;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
